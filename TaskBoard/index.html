@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Board</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="js/mqttws31.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    
+	<div id="login" style="width: 100%;height:500px; text-align: center;display:block;">
+        <input type="text" placeholder="登录姓名" id="username" style="margin-top:300px;height:40px; vertical-align:middle;">
+        <button id="btlogin" style="margin-top:300px;margin-left:5px;height:40px; vertical-align:middle;">登录</button>
+    </div>
+    <div id="content" style="display: none;width: 100%;height: 100%;">
+
+        <header>
+            <section>
+                <label for="title">每日BUG看板</label>
+                <input type="text" placeholder="添加BUG" id="title">
+            </section>
+        </header>
+        
+        <section>
+            <h2>
+                正在进行<span id="todocount"></span>
+            </h2>
+            <ol id="todolist" class="demo-box"></ol>
+    
+            <h2>已经完成<span id="donecount"></span>
+            </h2>
+            <ul id="donelist"></ul>
+        </section>
+    
+        <div id="times" style="position: absolute; bottom: 0; left: 0; right: 0;"></div>
+    </div>
+
+    <script type="text/javascript">
+        function getD1() {
+            var date = new Date();
+            var d1 = date.toLocaleString();
+            var div1 = document.getElementById("times");
+            div1.innerHTML = d1;
+        }
+        setInterval("getD1();", 1000);
+    </script>
+</body>
+
+</html>
