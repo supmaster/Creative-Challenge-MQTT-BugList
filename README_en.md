@@ -17,7 +17,7 @@
     <br />
     <strong>Task Board , All in Sight</strong>
     <br />
-    <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/README.md"><strong>中文版文档 »</strong></a>
+    <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/blob/main/README.md"><strong>中文版文档 »</strong></a>
     <br />
     <br />
     <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList" title="Not Support yet,need MQTT server key!">View Demo</a>
