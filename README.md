@@ -25,8 +25,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary><h2 style="display: inline-block">索引</h2></summary>
@@ -82,7 +80,7 @@
 ### 应用背景
 
 #### 应用现状
-* 对小团队来说，为此单独开发一套系统成本太高；使用Excel管理一是操作繁琐，二是无法实时同步给其他成员；使用企业微信、钉钉等社交软件，缺乏专业性，不便于直观了解整体情况。
+对小团队来说，为此单独开发一套系统成本太高；使用Excel管理一是操作繁琐，二是无法实时同步给其他成员；使用企业微信、钉钉等社交软件，缺乏专业性，不便于直观了解整体情况。
 #### 开发测试痛点
 任务管理虽然是很常见的需求，如果纯依靠人工势必造成管理混乱、疏忽遗漏、管控不严，而数字化是一个很好的解决方案。
 
@@ -117,6 +115,7 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
 
 <!-- USAGE EXAMPLES -->
 ## 功能介绍（以Bug List为例）
+### 系统功能
 #### 配置说明
 * 配置文件在js/index.js中，同一协作团队MQTT配置须一致
 * 部署方式没有要求，**联网环境**使用即可
@@ -132,6 +131,7 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
   * 上部：未解决的Bug
   * 下部：已解决的Bug
 [![Product Name Screen Shot][product-screenshot]](https://example.com "页面效果")
+### 业务功能
 #### 创建Bug
 * 直接在输入框输入Bug描述信息
 * 回车即可添加到未解决目录下
@@ -139,8 +139,52 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
 * 同时所有打开Bug看板的成员均会自动更新看板
 [![Product Name Screen Shot][product-screenshot]](https://example.com "创建提醒")
 #### 认领Bug
-* 直接在输入框输入Bug描述信息
-
+* 查看未解决的Bugs
+* 选择要认领的Bug，点击```认领```
+* 认领后可以看到该Bug上显示自己用户名
+* 团队其他用户均可收到认领提醒（该项不需要可以关闭）
+* 同时所有打开Bug看板的成员均会自动更新看板
+[![Product Name Screen Shot][product-screenshot]](https://example.com "认领Bug")
+#### 取消认领Bug
+* 查看未解决的Bugs
+* 选择要取消认领的Bug，点击自己用户名标签
+* 取消认领后即可释放该Bug，用户名标签自动改回```认领```
+* 团队其他用户均可收到释放提醒
+* 同时所有打开Bug看板的成员均会自动更新看板
+[![Product Name Screen Shot][product-screenshot]](https://example.com "取消认领Bug")
+#### 解决Bug
+* 查看未解决的Bugs
+* 选择自己已解决的Bug
+* 点击前面的方框，将其状态改为已解决
+* 该Bug将从```未解决列表```转移到```已解决列表```
+* 团队其他用户均可收到解决提醒（该项不需要可以关闭）
+* 同时所有打开Bug看板的成员均会自动更新看板
+[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+#### Bug复测不过
+* 对于复测不过的Bug，需要将其从```已解决列表```移回```未解决列表```
+* 在已解决列表选择复测不通过的Bug
+* 点击前面勾选状态的方框，将其状态改为未解决
+* 团队其他用户均可收到提醒
+* 同时所有打开Bug看板的成员均会自动更新看板
+[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+#### 删除Bug
+* 对于录入错误或复测通过的Bug，可执行删除操作
+* 选择要删除的Bug
+* 点击最后的删除框，将其从列表删除
+* 团队其他用户均可收到删除提醒
+* 同时所有打开Bug看板的成员均会自动更新看板
+[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+### 异常提示
+#### 认领他人Bug
+* 已被认领的Bug不允许认领
+* 提示“已被xxx认领...”，须释放后才能认领
+* 该操作仅本人提示，不会推送给认领人
+[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+#### 解决未认领Bug
+* 未认领的Bug不允许改为已完成
+* 提示“请先认领...”，认领后才可解决
+* 该操作仅本人提示，不会推送给他人
+[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
 
 <!-- ROADMAP -->
 ## 技术组件
