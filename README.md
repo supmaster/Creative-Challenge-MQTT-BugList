@@ -6,14 +6,18 @@
 <br />
 <p align="center">
   <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Screenshots/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">MQTT-TaskBoard</h3>
 
   <p align="center">
-    A serverless product helps your team to deal with daily tasks, witch is based on Easemob MQTT !
+    基于环信MQTT开发的Serverless任务看板程序
     <br />
+    <strong>任务看板 一眼尽览</strong>
+    <br />
+    <!-- A serverless product helps your team to deal with daily tasks, witch is based on Easemob MQTT !
+    <br /> -->
     <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/README_en.md"><strong>Docs for English version »</strong></a>
     <br />
     <br />
@@ -56,11 +60,9 @@
 <!-- ABOUT THE PROJECT -->
 ## 项目背景
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![](Screenshots/home.jpg "任务看板 一眼尽览")
 
-基于环信MQTT开发的Serverless任务看板程序
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+任务看板用于小团队协同管理日常任务，包括任务创建、任务认领、任务释放、任务解决、任务删除等操作，基于MQTT云服务，实现团队间实时同步推送。界面简洁、功能实用！
 
 <!-- event-background -->
 ### 大赛背景
@@ -130,28 +132,35 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
   * 头部：系统名称、添加框
   * 上部：未解决的Bug
   * 下部：已解决的Bug
-[![Product Name Screen Shot][product-screenshot]](https://example.com "页面效果")
+* 登录成功可以从console看到MQTT相关日志：
+  * MQTT客户端初始化
+  * 获取token
+  * 用户注册（已注册用户提示注册失败，不影响）
+  * 用户登录
+  * MQTT客户端连接云端
+![](Screenshots/login0.jpg "登录界面") ![](Screenshots/login.jpg "登录成功")
 ### 业务功能
 #### 创建Bug
 * 直接在输入框输入Bug描述信息
 * 回车即可添加到未解决目录下
 * 创建成功后团队其他用户均可收到创建提醒
 * 同时所有打开Bug看板的成员均会自动更新看板
-[![Product Name Screen Shot][product-screenshot]](https://example.com "创建提醒")
+* ![](Screenshots/addBugs.jpg "创建提醒")
 #### 认领Bug
 * 查看未解决的Bugs
 * 选择要认领的Bug，点击```认领```
 * 认领后可以看到该Bug上显示自己用户名
 * 团队其他用户均可收到认领提醒（该项不需要可以关闭）
 * 同时所有打开Bug看板的成员均会自动更新看板
-[![Product Name Screen Shot][product-screenshot]](https://example.com "认领Bug")
+![](Screenshots/rengling.jpg "认领提醒")
+![](Screenshots/rengling2.jpg "认领提醒")
 #### 取消认领Bug
 * 查看未解决的Bugs
 * 选择要取消认领的Bug，点击自己用户名标签
 * 取消认领后即可释放该Bug，用户名标签自动改回```认领```
 * 团队其他用户均可收到释放提醒
 * 同时所有打开Bug看板的成员均会自动更新看板
-[![Product Name Screen Shot][product-screenshot]](https://example.com "取消认领Bug")
+![](Screenshots/shifang.jpg "释放提醒")
 #### 解决Bug
 * 查看未解决的Bugs
 * 选择自己已解决的Bug
@@ -159,32 +168,31 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
 * 该Bug将从```未解决列表```转移到```已解决列表```
 * 团队其他用户均可收到解决提醒（该项不需要可以关闭）
 * 同时所有打开Bug看板的成员均会自动更新看板
-[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+![](Screenshots/wancheng.jpg "完成提醒")
 #### Bug复测不过
 * 对于复测不过的Bug，需要将其从```已解决列表```移回```未解决列表```
 * 在已解决列表选择复测不通过的Bug
 * 点击前面勾选状态的方框，将其状态改为未解决
 * 团队其他用户均可收到提醒
 * 同时所有打开Bug看板的成员均会自动更新看板
-[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
 #### 删除Bug
 * 对于录入错误或复测通过的Bug，可执行删除操作
 * 选择要删除的Bug
 * 点击最后的删除框，将其从列表删除
 * 团队其他用户均可收到删除提醒
 * 同时所有打开Bug看板的成员均会自动更新看板
-[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+![](Screenshots/shanchu2.jpg "删除提醒")
 ### 异常提示
 #### 认领他人Bug
 * 已被认领的Bug不允许认领
 * 提示“已被xxx认领...”，须释放后才能认领
 * 该操作仅本人提示，不会推送给认领人
-[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+![](Screenshots/rengling3.jpg "认领他人Bug")
 #### 解决未认领Bug
 * 未认领的Bug不允许改为已完成
 * 提示“请先认领...”，认领后才可解决
 * 该操作仅本人提示，不会推送给他人
-[![Product Name Screen Shot][product-screenshot]](https://example.com "解决Bug")
+![](Screenshots/rengling4.jpg "解决未认领Bug")
 
 <!-- ROADMAP -->
 ## 技术组件
@@ -205,7 +213,7 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
 <!-- LICENSE -->
 ## 开源协议
 
-基于 MIT 开源协议. 点击 `LICENSE` 查看更多信息
+基于 Apache 开源协议. 点击 `LICENSE` 查看更多信息
 
 <!-- CONTACT -->
 ## 联系作者
@@ -217,14 +225,14 @@ Project Link: [https://github.com/supmaster/Creative-Challenge-MQTT-BugList](htt
 <!-- ACKNOWLEDGEMENTS -->
 ## 致谢
 
-* [环信](https://console.easemob.com)
-* [IM Geek]()
-* []()社群小姐姐 :girl:
+- [x] [环信](https://console.easemob.com)
+- [x] [IM Geek]()
+- [x] []()社群小姐姐 :girl:
 
 [回到顶部](#readme)
 
 <!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
 [contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
@@ -236,8 +244,4 @@ Project Link: [https://github.com/supmaster/Creative-Challenge-MQTT-BugList](htt
 [license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
 [license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
-
-# Creative-Challenge-MQTT-BugList
-A serverless product helps you (small team) to deal with daily bugs, witch is based on Easemob MQTT.
-基于环信MQTT开发的Serverless任务看板程序，上传中...
+[linkedin-url]: https://linkedin.com/in/github_username -->
