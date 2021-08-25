@@ -18,7 +18,7 @@
     <br />
     <!-- A serverless product helps your team to deal with daily tasks, witch is based on Easemob MQTT !
     <br /> -->
-    <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/README_en.md"><strong>Docs for English version »</strong></a>
+    <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/blob/main/README_en.md"><strong>Docs for English version »</strong></a>
     <br />
     <br />
     <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList" title="纯前端key没有加密，暂无演示，配置好key即可使用">查看演示</a>
@@ -30,7 +30,7 @@
 </p>
 
 <!-- TABLE OF CONTENTS -->
-<details open="close">
+<details>
   <summary><h2 style="display: inline-block">索引</h2></summary>
   <ol>
     <li>
