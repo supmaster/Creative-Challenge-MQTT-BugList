@@ -1,6 +1,6 @@
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/LICENSE)
-[![Build Status](https://travis-ci.org/xialonghua/kotmvp.svg?branch=master)](https://travis-ci.org/supmaster/Creative-Challenge-MQTT-BugList) 
-![Github stars](https://img.shields.io/github/stars/DWCTOD/interview.svg)
+[![Build Status](https://travis-ci.org/supmaster/Creative-Challenge-MQTT-BugList.svg?branch=master)](https://travis-ci.org/supmaster/Creative-Challenge-MQTT-BugList) 
+![Github stars](https://img.shields.io/github/stars/Creative-Challenge-MQTT-BugList/interview.svg)
 
 <!-- PROJECT LOGO -->
 <br />
