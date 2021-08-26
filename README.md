@@ -1,4 +1,4 @@
-[![License](https://img.shields.io/badge/license-Apache%202-green.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/modood/Administrative-divisions-of-China/master/LICENSE)
 [![Build Status](https://travis-ci.org/xialonghua/kotmvp.svg?branch=master)](https://travis-ci.org/supmaster/Creative-Challenge-MQTT-BugList) 
 ![Github stars](https://img.shields.io/github/stars/DWCTOD/interview.svg)
 
@@ -245,7 +245,7 @@ Bug管理作为一种典型的任务管理类需求，在小团队项目开发�
 <!-- LICENSE -->
 ## 5 开源协议
 
-基于 Apache 开源协议. 点击 `LICENSE` 查看更多信息
+基于 MIT 开源协议. 点击 `LICENSE` 查看更多信息
 
 <!-- CONTACT -->
 ## 6 联系作者
