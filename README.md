@@ -21,7 +21,7 @@
     <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/blob/main/README_en.md"><strong>Docs for English version »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/releases/download/demo/TaskBoard_release.zip" title="下载解压即可使用">查看演示</a>
+    <a href="http://mqtt.huiribao.com/TaskBoard/" title="在线演示">查看演示</a>
     ·
     <a href="https://github.com/supmaster/Creative-Challenge-MQTT-BugList/issues">Bug 提交</a>
     ·
